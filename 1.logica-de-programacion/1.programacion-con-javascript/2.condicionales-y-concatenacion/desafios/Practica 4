@@ -1,0 +1,3 @@
+// Ejemplo de cant. de saldo
+let saldoUsuario = 500;
+alert(`Tu saldo es ${saldoUsuario}.`)

@@ -1,0 +1,11 @@
+const Pi = 3.14;
+
+function areaYperimetroCircular(radio){
+    let area = Pi * (radio*radio);
+    let perimetro = 2*Pi*radio;
+    console.log("El area es" + area);
+    console.log("El perimetro es" + perimetro);
+    
+}
+let radio = 15;
+areaYperimetroCircular(radio);

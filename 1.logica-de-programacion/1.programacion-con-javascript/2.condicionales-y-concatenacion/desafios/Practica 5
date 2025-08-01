@@ -1,0 +1,3 @@
+//Variable
+let nombreUsuario = prompt("Porfavor, escriba su nombre.");
+alert(`Bienvenido!, ${nombreUsuario}.`);

@@ -1,0 +1,2 @@
+lenguaje = prompt("que lenguaje de programacion te gusta mas ?");
+console.log(lenguaje);

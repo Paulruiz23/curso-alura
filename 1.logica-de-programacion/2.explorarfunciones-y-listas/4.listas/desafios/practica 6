@@ -1,0 +1,21 @@
+
+//funcion para recibir numeros de una lista y calcular promedio
+function calcularPromedio(lista){
+    // se usa suma dentro de la funcion para reiniciarla en cada llamado
+    let suma = 0;
+
+    // suma de elementos de la lista
+    for(let i = 0 ; i < lista.length ; i ++){
+        suma += lista[i];
+    }
+    // Calculamos el promedio dividiendo la suma entre la cantidad de elementos
+    let promedio = suma/lista.length;
+
+    return promedio;
+}
+
+let notas = [13, 17, 18, 12];
+let promedioNotas = calcularPromedio(notas);
+
+
+console.log(promedioNotas);

@@ -1,0 +1,11 @@
+//variables
+let numUsuario = prompt("Escribe un numero positivo o negativo");
+// condicion
+if(numUsuario < 0){
+    alert("Numero Negativo");
+} else if(numUsuario > 0){
+    alert("Numero Positivo");
+}else{
+    alert("El numero es cero");
+}
+

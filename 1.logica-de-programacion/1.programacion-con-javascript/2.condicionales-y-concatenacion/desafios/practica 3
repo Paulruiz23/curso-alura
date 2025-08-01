@@ -1,0 +1,8 @@
+//variables
+let puntos = 110;
+// condicion
+if (puntos >= 100){
+    console.log("Has ganado!");
+}else{
+    console.log("Intentelo nuevamente :(");
+}

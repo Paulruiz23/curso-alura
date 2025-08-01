@@ -1,0 +1,14 @@
+//variables
+let diaSemana = prompt("¿Podrías indicarme que dia de semana es?");
+
+/*
+Este codigo realiza
+la comparacion
+*/
+if (diaSemana === "Sabado" || diaSemana === "Domingo") {
+    //Acertamos, fue verdadera la condicion
+    alert("Buen fin de semana!");
+} else{
+    //La condicion no se cumplio
+    alert("Buena Semana!" );
+}

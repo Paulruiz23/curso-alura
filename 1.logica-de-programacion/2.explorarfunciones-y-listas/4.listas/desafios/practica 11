@@ -1,0 +1,17 @@
+function listaDeCuadrados(lista){
+let cuadrados = 0;
+let listaNueva = [];
+
+    //bucle FOR para recorrer la lista
+    for(let i= 0; i< lista.length ; i++){
+        // cuadrado de elementos de listas
+        cuadrados = lista[i] * lista[i];
+        listaNueva.push(cuadrados);   
+        }
+    return listaNueva;
+}
+
+let numeroL = [4,2,6,12,13,34,56,78];
+let resultado = listaDeCuadrados(numeroL);
+
+console.log("La nueva lista es", resultado);

@@ -1,0 +1,5 @@
+function numeroUsuario(numero){
+    return numero * numero;
+}
+let resultado = numeroUsuario(3);
+console.log(resultado);

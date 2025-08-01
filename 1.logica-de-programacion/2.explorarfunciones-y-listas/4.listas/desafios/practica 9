@@ -1,0 +1,15 @@
+function posicionLista(lista, elemento){
+    for(let i = 0; i< lista.length; i ++){
+
+        if(lista[i] === elemento){
+            return i;
+        }
+    }
+    return -1;
+
+}
+
+let numeros = [21,2,4,42,14];
+
+console.log(posicionLista(numeros,42));
+console.log(posicionLista(numeros,20));

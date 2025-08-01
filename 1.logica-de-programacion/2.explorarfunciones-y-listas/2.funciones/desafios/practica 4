@@ -1,0 +1,5 @@
+function numeroUsuario(a,b,c){
+    return (a+b+c) / 3;
+}
+let resultadoTriple = numeroUsuario(5,8,7);
+console.log(resultadoTriple);

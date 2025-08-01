@@ -1,0 +1,8 @@
+function convertidorDolaraReal(dolares){
+    let dolar = 4.80;
+    let real = dolares * dolar;
+    return real;
+}
+let valorendolar = 50;
+let valorenreal = convertidorDolaraReal(valorendolar);
+console.log(`${valorendolar} dolares es r$ ${valorenreal}`);

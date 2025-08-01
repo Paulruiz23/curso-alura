@@ -1,0 +1,13 @@
+let lenguajesProgramacion = ["JavaScript","C","C++","Kotlin","Python"];
+//agrengando con push
+lenguajesProgramacion.push("Java","GoLan","Ruby");
+
+function mostrarLenguajes(){
+    // recorremos la lista con un bucle FOR para mostrar cada lenguaje en la consola
+    for(let i = lenguajesProgramacion.length - 1; i >= 0 ; i--){
+    console.log(lenguajesProgramacion[i]);
+    }
+   
+}
+// Llamamos a la función para mostrar los lenguajes
+mostrarLenguajes();

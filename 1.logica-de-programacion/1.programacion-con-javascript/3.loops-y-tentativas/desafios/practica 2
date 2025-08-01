@@ -1,0 +1,8 @@
+//variables
+let numero = 10;
+//bucle
+while(numero >= 0){
+    console.log(numero);
+    alert(`El numero es ${numero}.`);
+    numero = numero -1;
+}

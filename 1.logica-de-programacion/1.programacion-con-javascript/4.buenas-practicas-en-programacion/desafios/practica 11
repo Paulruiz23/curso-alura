@@ -1,0 +1,2 @@
+let numeroRandom = math.random();
+console.log(numeroRandom);

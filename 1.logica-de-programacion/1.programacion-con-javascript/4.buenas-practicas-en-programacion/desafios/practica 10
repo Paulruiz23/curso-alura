@@ -1,0 +1,6 @@
+let nota = 15;
+    if (nota >= 7){
+    console.log("Aprobado.");
+}   else{
+    console.log("Reprobado.");
+}

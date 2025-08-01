@@ -1,0 +1,11 @@
+function calcularFactorial(numero){
+    if (numero === 0 || numero === 1){
+        return 1;
+    } else {
+    return numero * calcularFactorial(numero - 1);
+    }
+}
+//ejemplo
+let numero = 6;
+let resultado = calcularFactorial(numero);
+console.log(`El factorial de ${numero} es ${resultado}`);

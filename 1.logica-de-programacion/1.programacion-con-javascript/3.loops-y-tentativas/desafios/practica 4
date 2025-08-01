@@ -1,0 +1,16 @@
+//variables
+let numero = 0;
+let parada = parseInt(prompt("escriba su numero:"));// parseint convierte el valor a numero
+
+//isnan ayuda a verificar que el valor sea un numero valido
+
+if(isNaN(parada)||parada < 0){
+    alert("Ingrese un numero valido mayor o igual a 0");
+    } else{
+    //bucle
+        while(numero <= parada){
+            console.log(numero);
+            alert(`El numero es ${numero}.`);
+            numero = numero +1;
+        }
+    }

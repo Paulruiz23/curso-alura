@@ -1,0 +1,9 @@
+function areaYperimetro(altura,anchura){
+    let area = altura * anchura;
+    let perimetro = 2*(altura + anchura);
+    console.log("Area: " + area);
+    console.log("Perimetro " + perimetro);
+}
+let altura = 3;
+let anchura = 4;
+areaYperimetro(altura,anchura);

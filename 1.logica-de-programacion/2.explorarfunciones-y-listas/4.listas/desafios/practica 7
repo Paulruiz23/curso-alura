@@ -1,0 +1,33 @@
+function mostrarNumero(lista){
+    // Usamos Math.max y Math.min con el operador spread (...) para trabajar con listas
+    let mayor = Math.max(...lista);
+    let menor = Math.min(...lista);
+
+    console.log("Numero mayor =",mayor);
+    console.log("Numero menor =",menor);
+}
+
+function mostrarMayorYMenor(lista) {
+    // Inicializamos el mayor y menor con el primer valor de la lista
+    let mayor = lista[0];
+    let menor = lista[0];
+
+    // Recorremos el resto de la lista desde el segundo elemento
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > mayor) {
+            mayor = lista[i]; // Actualizamos el mayor
+        }
+        if (lista[i] < menor) {
+            menor = lista[i]; // Actualizamos el menor
+        }
+    }
+
+    console.log("El número más grande es:", mayor);
+    console.log("El número más pequeño es:", menor);
+}
+
+
+
+let numeroL = [13,3,33,46,5,6,99];
+mostrarNumero(numeroL);
+mostrarMayorYMenor(numeroL);

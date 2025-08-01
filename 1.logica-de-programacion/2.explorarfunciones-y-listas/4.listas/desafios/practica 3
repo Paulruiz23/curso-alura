@@ -1,0 +1,3 @@
+let lenguajesProgramacion = ["JavaScript","C","C++","Kotlin","Python"];
+//agrengando con push
+lenguajesProgramacion.push("Java","GoLan","Ruby");

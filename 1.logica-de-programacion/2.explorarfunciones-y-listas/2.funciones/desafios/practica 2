@@ -1,0 +1,4 @@
+function nombreUsuario(){
+    console.log(`Hola, ${nombre}`);
+}
+nombreUsuario("Alicia");

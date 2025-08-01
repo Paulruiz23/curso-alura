@@ -1,0 +1,19 @@
+
+function sumaDeListas(lista,lista2){
+let suma = 0;
+let listaNuevadeSuma = [];
+    //bucle FOR para recorrer la lista
+    for(let i= 0; i< lista.length ; i++){
+        // suma de elementos de listas
+        suma = lista[i]+lista2[i];
+        // se guarda en una lista nueva los resultados de las sumas
+        listaNuevadeSuma.push(suma);
+        }
+    //regresa el valor total de la suma de listas
+    return listaNuevadeSuma;
+}
+
+let numeroL = [4,2,6,12,13,34,56,78];
+let numeroL2 = [4,2,6,12,13,34,56,78];
+let resultado = sumaDeListas(numeroL,numeroL2);
+console.log("La suma de las listas es",resultado);

@@ -1,0 +1,15 @@
+function sumaElementosLista(lista){
+    let suma = 0;// se crea la variable para acumular los valores de la lista
+    
+    //bucle FOR para recocrrer la lista y sumar los elementos de la lista
+    for(let i= 0; i< lista.length ; i++){
+        suma += lista[i]; // suma = suma + lista[i]
+    }
+    //regresa el valor total acumulado
+    return suma;
+}
+
+
+let numeroL = [4,2,6,12,13,34,56,78];
+let resultado = sumaElementosLista(numeroL);
+console.log("La suma de la lista es",resultado);
