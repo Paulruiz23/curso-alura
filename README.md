@@ -12,25 +12,26 @@ Este repositorio contiene mis ejercicios y prácticas de programación realizada
 - [ Objetivos del repositorio](#objetivos-del-repositorio-)
 - [ Autor](#-autor)
 ---
+
 ## 📚 Índice de Contenido 📚
 
-### 1. Programación con JavaScript 🧠
+### 🧠 1. Programación con JavaScript
 
-- [1.1 Iniciando con JavaScript](./1.programacion-con-javascript/1.iniciando-con-javascript): Primeros pasos con variables, operadores y lógica básica.
-- [1.2 Condicionales y concatenación](./1.programacion-con-javascript/2.condicionales-y-concatenacion): Uso de estructuras `if`, `else`, y manipulación de cadenas.
-- [1.3 Loops y tentativas](./1.programacion-con-javascript/3.loops-y-tentativas): Uso de bucles `for`, `while`, `do-while` y validaciones.
-- [1.4 Buenas prácticas en programación](./1.programacion-con-javascript/4.buenas-practicas-en-programacion): Estilo de código, convenciones y refactorización.
-- [1.5 Desafío](./1.programacion-con-javascript/5.desafio): Proyecto aplicando conceptos previos.
+- [1.1 Iniciando con JavaScript](./1.logica-de-programacion/1.programacion-con-javascript/1.iniciando-con-javascript): Primeros pasos con variables, operadores y lógica básica.
+- [1.2 Condicionales y concatenación](./1.logica-de-programacion/1.programacion-con-javascript/2.condicionales-y-concatenacion): Uso de estructuras `if`, `else`, y manipulación de cadenas.
+- [1.3 Loops y tentativas](./1.logica-de-programacion/1.programacion-con-javascript/3.loops-y-tentativas): Uso de bucles `for`, `while`, `do-while` y validaciones.
+- [1.4 Buenas prácticas en programación](./1.logica-de-programacion/1.programacion-con-javascript/4.buenas-practicas-en-programacion): Estilo de código, convenciones y refactorización.
+- [1.5 Desafío](./1.logica-de-programacion/1.programacion-con-javascript/5.desafio): Proyecto integrador aplicando conceptos previos.
 
-### 2. Explorar funciones y listas 🧩
-
-- [2.1 Interactuando con HTML](./2.explorarfunciones-y-listas/1.interactuando-con-html): Manipulación del DOM y eventos en JavaScript.
-- [2.2 Funciones](./2.explorarfunciones-y-listas/2.funciones): Definición, parámetros, retorno y alcance de funciones.
-- [2.3 Reiniciando el juego](./2.explorarfunciones-y-listas/3.reiniciando-el-juego): Uso de funciones para control de flujo y lógica en juegos.
-- [2.4 Listas](./2.explorarfunciones-y-listas/4.listas): Arreglos, métodos y recorrido de listas.
-- [2.5 Publicando el proyecto](./2.explorarfunciones-y-listas/5.publicando-el-proyecto): Organización final y despliegue del proyecto.
+### 🧩 2. Explorar funciones y listas
+- [2.1 Interactuando con HTML](./1.logica-de-programacion/2.explorarfunciones-y-listas/1.interactuando-con-html): Manipulación del DOM y eventos en JavaScript.
+- [2.2 Funciones](./1.logica-de-programacion/2.explorarfunciones-y-listas/2.funciones): Definición, parámetros, retorno y alcance de funciones.
+- [2.3 Reiniciando el juego](./1.logica-de-programacion/2.explorarfunciones-y-listas/3.reiniciando-el-juego): Uso de funciones para control de flujo y lógica en juegos.
+- [2.4 Listas](./1.logica-de-programacion/2.explorarfunciones-y-listas/4.listas): Arreglos, métodos y recorrido de listas.
+- [2.5 Publicando el proyecto](./1.logica-de-programacion/2.explorarfunciones-y-listas/5.publicando-el-proyecto): Organización final y despliegue del proyecto.
 
 ---
+
 ## 🛠️ Cómo ejecutar 🛠️
 
 ### En Visual Studio Code
