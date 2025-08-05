@@ -17,13 +17,13 @@ Este repositorio contiene mis ejercicios y prácticas de programación realizada
 
 ## Índice de Contenido
 
-→ [Logica de programacion](#1.logica-de-programacion)
+→ [Logica de programacion](#1-logica-de-programacion)
 
-→ [Challenge Amigo Secreto](#2.challenge-amigo-secreto)
+→ [Challenge Amigo Secreto](#2-challenge-amigo-secreto)
 
 ---
 
-### 1.Logica de programacion
+### 1. Logica de programacion
 
    #### 🧠 1.1 Programación con JavaScript
    * [1.1.1 Iniciando con JavaScript](./1.logica-de-programacion/1.programacion-con-javascript/1.iniciando-con-javascript): Primeros pasos con variables, operadores y lógica básica.
@@ -40,7 +40,7 @@ Este repositorio contiene mis ejercicios y prácticas de programación realizada
    - [1.2.5 Publicando el proyecto](./1.logica-de-programacion/2.explorarfunciones-y-listas/5.publicando-el-proyecto): Organización final y despliegue del proyecto.  
       🔗 [Ver proyecto final en línea](https://paulruiz23.github.io/curso-alura/1.logica-de-programacion/2.explorarfunciones-y-listas/5.publicando-el-proyecto/proyectofinal/)🔗
 
-### 2.Challenge Amigo Secreto
+### 2. Challenge Amigo Secreto
 
    - [2.1 Proyecto: Challenge Amigo Secreto](./2.challenge-amigosecreto)
 
