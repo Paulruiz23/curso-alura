@@ -12,16 +12,7 @@ function agregarAmigo() {
         alert("Por favor, ingresa un nombre válido.");
         return;
     }
-    //Valida si tiene numero
-    if (tieneNumero(nombre)) {
-        alert("Por favor, ingresa un nombre válido.");
-        return;
-    }
-    //valida si tiene simbolo
-    if (tieneSimbolos(nombre)) {
-        alert("Por favor, ingresa un nombre válido.");
-        return;
-    }
+
 
     listaDeAmigos.push(nombre);
     input.value = "";
@@ -29,6 +20,30 @@ function agregarAmigo() {
     input.focus();
     actualizarLista();
 }
+
+
+//muestra los nombres en la pantalla uno debajo del otro
+function actualizarLista() {
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; //borrar lo anterior
+
+    // Crear un <li> para cada nombre y añadirlo a la lista
+    for (let i = 0; i < listaDeAmigos.length; i++) {
+        //se aprendioa usar <li>
+        let item = document.createElement("li");
+        item.textContent = listaDeAmigos[i];
+        // se aprendio a usar appendChild
+        lista.appendChild(item);
+    }
+
+    //copia la lista para el sorteo
+    nombresDisponibles = [];
+    for (let i = 0; i < listaDeAmigos.length; i++) {
+        nombresDisponibles.push(listaDeAmigos[i]);
+    }
+}
+
+
 
 function sortearAmigo() {
     let resultado = document.getElementById("resultado");
