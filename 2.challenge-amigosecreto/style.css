@@ -160,3 +160,10 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
+.nombre-sorteado {
+    text-decoration: line-through;
+    opacity: 0.6;
+    font-style: italic;
+    color: gray;
+}
