@@ -23,8 +23,22 @@
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
                 <button class="button-add" onclick="agregarAmigo()">Añadir</button>
             </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+        
+            <!-- Espacio entre botón y listas -->
+            <div style="margin-bottom: 25px;"></div>
+            <!-- Se aprendio a usar display:flex para organizar en fila o columna-->    
+            <div style="display: flex; gap: 90px; align-items: flex-start;">
+                <div>
+                    <h3>Lista de Amigos</h3>
+                    <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+                </div> 
+                <div>
+                    <h3>Grupos Sorteados</h3>   
+                    <!-- Nujeva lista para agregar las personas sorteadas-->
+                    <ul id="listaGrupos" class="name-list" aria-labelledby="listaGrupos" role="list"></ul>
+                </div>
+            </div>
+
             <!-- Cambiando elemento UL por DIV para mejor funcionamiento-->
             <div id="resultado" class="result-list" aria-live="polite"></div>
             
