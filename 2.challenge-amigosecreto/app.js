@@ -13,7 +13,6 @@ function agregarAmigo() {
         return;
     }
 
-
     listaDeAmigos.push(nombre);
     input.value = "";
     //se aprendio a usar focus
@@ -65,5 +64,5 @@ function sortearAmigo() {
     }
     nombresDisponibles = nuevaLista;
 
-    resultado.innerHTML = `El amigo secreto es: <span style="color: red"><b>${elegido}</span><b>🎉`;
+    resultado.innerHTML = `El amigo secreto es: <span style="color: red"><b>${elegido}<b></span>🎉`;
 }
