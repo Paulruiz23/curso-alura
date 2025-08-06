@@ -3,111 +3,182 @@ let listaDeAmigos = [];
 let nombresDisponibles = [];
 let contadorSorteos = 0;
 let grupoActual = [];
-let colores = ["red", "blue", "green", "black", "gray", "purple"];
-let confirmacionHecha = false; // ✅ Nueva variable para controlar si ya se hizo la confirmación
+let confirmacionHecha = false; //nueva variable para controlar si ya se hizo la confirmacion
 
+//funcion para validar si el nombre ingresado es valido (no vacío)
+function esNombreValido(nombre) {
+    return nombre.trim() !== "";
+}
+
+//funcion para desactivar el input y boton de añadir
+function desactivarEntrada() {
+    document.querySelector(".button-add").disabled = true;
+    document.getElementById("amigo").disabled = true;
+}
+
+//funcion para mostrar un mensaje en el area de resultado
+function mostrarResultado(mensaje) {
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = mensaje;
+}
+
+//funcion para tachar un nombre sorteado en la lista visual
+function tacharNombre(nombre) {
+    let indice = listaDeAmigos.indexOf(nombre);
+    if (indice !== -1) {
+        let li = document.getElementById("amigo-" + indice);
+        if (li) {
+            li.classList.add("nombre-sorteado");
+        }
+    }
+}
+
+//funcion para eliminar un nombre por índice de una lista
+function eliminarNombrePorIndice(lista, indice) {
+    let nuevaLista = [];
+    for (let i = 0; i < lista.length; i++) {
+        if (i !== indice) {
+            nuevaLista.push(lista[i]);
+        }
+    }
+    return nuevaLista;
+}
+
+//crea un duplicado temporal de la lista original de amigos
+function duplicarListaDeAmigos(listaOriginal) {
+    let copia = [];
+    for (let i = 0; i < listaOriginal.length; i++) {
+        copia.push(listaOriginal[i]);
+    }
+    return copia;
+}
+
+//Muestra el grupo actual en la lista (aunque esté incompleto)
+function mostrarGrupoActual() {
+    let listaGrupos = document.getElementById("listaGrupos");
+
+    if (grupoActual.length === 1) {
+        let ultimo = document.querySelector("#listaGrupos li.temp");
+        if (ultimo) {
+            listaGrupos.removeChild(ultimo);
+        }
+
+        let item = document.createElement("li");
+        item.textContent = grupoActual[0] + " 🤝 ?";
+        item.classList.add("temp");
+        listaGrupos.appendChild(item);
+    }
+
+    if (grupoActual.length === 2) {
+        let temporal = document.querySelector("#listaGrupos li.temp");
+        if (temporal) {
+            listaGrupos.removeChild(temporal);
+        }
+
+        let itemGrupo = document.createElement("li");
+        itemGrupo.textContent = grupoActual[0] + " 🤝 " + grupoActual[1];
+        listaGrupos.appendChild(itemGrupo);
+
+        grupoActual = [];
+    }
+}
+
+//Agrega nombres a la lista
 function agregarAmigo() {
     let input = document.getElementById("amigo");
-    let nombre = input.value; // se guarda el usuario
+    let nombre = input.value;
 
-    //Validar si está vacío
-    if (nombre === "") {
+    //validar si está vacío
+    if (!esNombreValido(nombre)) {
         alert("Por favor, ingresa un nombre válido.");
+        return;
+    }
+
+    //verificar duplicado
+    if (listaDeAmigos.includes(nombre)) {
+        alert("Ese nombre ya fue agregado.");
         return;
     }
 
     listaDeAmigos.push(nombre);
     input.value = "";
-    //se aprendio a usar focus
     input.focus();
     actualizarLista();
 }
 
-
 //muestra los nombres en la pantalla uno debajo del otro
 function actualizarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; //borrar lo anterior
+    lista.innerHTML = "";
 
-    // Se aprendio a usar y crear elemento <li>
     for (let i = 0; i < listaDeAmigos.length; i++) {
         let item = document.createElement("li");
         item.textContent = listaDeAmigos[i];
-        item.setAttribute("id", "amigo-" + listaDeAmigos[i]);    
-        // se aprendio a usar appendChild
+        item.setAttribute("id", "amigo-" + i);
         lista.appendChild(item);
     }
-
-    //copia la lista para el sorteo
-    nombresDisponibles = [];
-    for (let i = 0; i < listaDeAmigos.length; i++) {
-        nombresDisponibles.push(listaDeAmigos[i]);
-    }
+    nombresDisponibles = duplicarListaDeAmigos(listaDeAmigos);
 }
 
+//sirve para confirmar si la lista ingresada esta completa
 function sortearAmigo() {
-    let resultado = document.getElementById("resultado");
-
-    // ✅ Confirmación antes de sortear solo una vez
     if (!confirmacionHecha) {
-        let confirmar = confirm("¿Estás seguro de que ya ingresaste todos los nombres?");
-        if (!confirmar) {
-            return;
+
+        // Verifica si el número es impar
+        if (listaDeAmigos.length % 2 !== 0) {
+            alert("El número de amigos es impar. Alguien quedará sin pareja.");
+
         }
 
-        // ✅ Desactiva el botón y el input después de confirmar
-        document.querySelector(".button-add").disabled = true; // desactiva el botón añadir
-        document.getElementById("amigo").disabled = true;       // desactiva el campo de texto
-
-        confirmacionHecha = true; // evita que vuelva a preguntar
+        if (!confirm("¿Estás seguro de que ya ingresaste todos los nombres?")) return;
+        
+        desactivarEntrada();
+        confirmacionHecha = true;
     }
 
     if (nombresDisponibles.length === 0) {
-        resultado.innerHTML = "Ya se sortearon todos los nombres.";
+        mostrarResultado("Ya se sortearon todos los nombres.");
+        document.getElementById("btn-reiniciar").disabled = false;
         return;
     }
 
-    let indice = Math.floor(Math.random() * nombresDisponibles.length);
-    let elegido = nombresDisponibles[indice];
-
-    //Eliminar el nombre sorteado de la lista
-    let nuevaLista = [];
-    for (let i = 0; i < nombresDisponibles.length; i++) {
-        if (i !== indice) {
-            nuevaLista.push(nombresDisponibles[i]);
-        }
-    }
-    nombresDisponibles = nuevaLista;
-
-    resultado.innerHTML = `El amigo secreto es: <span style="color: red"><b>${elegido}</b></span>🎉`;
-    
+    let elegido = sortearNombreAleatorio();
+    mostrarResultado(`El amigo secreto es: <span style="color: red"><b>${elegido}</b></span>🎉`);
     contadorSorteos++;
-
-    //tachar los nombres sorteados
-    let liSorteado = document.getElementById("amigo-" + elegido);
-    if (liSorteado) {
-        liSorteado.classList.add("nombre-sorteado");
-    }
-
-    //Agrupa de a 2 sorteos
+    tacharNombre(elegido);
     grupoActual.push(elegido);
-
-    if (grupoActual.length === 2) {
-        let listaGrupos = document.getElementById("listaGrupos");
-        let itemGrupo = document.createElement("li");
-        itemGrupo.textContent = grupoActual[0] + " 🤝 " + grupoActual[1];
-
-        cambiarColorDeGrupo(itemGrupo); // aplicar color solo a esta lista
-
-        listaGrupos.appendChild(itemGrupo);
-        grupoActual = [];
-    }
+    mostrarGrupoActual();
 }
 
-// Función nueva para cambiar color de fondo
-function cambiarColorDeGrupo(elementoGrupo) {
-    let grupo = Math.floor(contadorSorteos / 2);
-    let color = colores[grupo % colores.length];
-    elementoGrupo.style.backgroundColor = color;
-    elementoGrupo.style.color = "white";
+//devuelve un nombre aleatorio y lo elimina de la lista de disponibles
+function sortearNombreAleatorio() {
+    let indice = Math.floor(Math.random() * nombresDisponibles.length);
+    let nombre = nombresDisponibles[indice];
+    nombresDisponibles = eliminarNombrePorIndice(nombresDisponibles, indice);
+    return nombre;
+}
+
+//reinicia el juego
+function reiniciarJuego() {
+    listaDeAmigos = [];
+    nombresDisponibles = [];
+    contadorSorteos = 0;
+    grupoActual = [];
+    confirmacionHecha = false;
+
+    //limpiar pantallas
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("listaGrupos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+
+    //activar entrada y boton
+    document.getElementById("amigo").value = "";
+    document.getElementById("amigo").disabled = false;
+    document.querySelector(".button-add").disabled = false;
+
+    //desactivar el boton de reinicio
+    document.getElementById("btn-reiniciar").disabled = true;
+
+    //enfocar el input
+    document.getElementById("amigo").focus();
 }
