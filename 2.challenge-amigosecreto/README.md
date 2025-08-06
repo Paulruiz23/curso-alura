@@ -12,9 +12,9 @@ Es ideal para organizar juegos de amigo secreto o simplemente practicar lógica 
 
 - [Funcionalidad](#funcionalidad)
 - [Aprendizajes](#aprendizajes)
-- [Explicación del Código](#explicacion-del-código)
-- [Cómo usar](#cómo-usar)
-- [Tecnologías usadas](#tecnologías-usadas)
+- [Explicación del Código](#explicacion-del-codigo)
+- [Cómo usar](#como-usar)
+- [Tecnologías usadas](#tecnologias-usadas)
 - [Estructura de archivos](#estructura-de-archivos)
 - [Autor](#autor)
 
