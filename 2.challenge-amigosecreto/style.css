@@ -86,10 +86,14 @@ body {
     border-radius: 25px 0 0 25px;
     font-size: 16px;
 }
-
+/*Se modifica para tener los botones uno al lado del otro*/
 .button-container {
-    width: 300px;
+    display: flex;
+    gap: 50px;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 300px;
 }
 
 /* Estilos de entrada de texto */
@@ -131,7 +135,7 @@ ul {
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .result-list {
@@ -142,7 +146,7 @@ ul {
     text-align: center;
 }
 
-/* Botón de sortear título */
+/* Boton de sortear titulo */
 .button-draw {
     display: flex;
     align-items: center;
@@ -154,7 +158,7 @@ ul {
 }
 
 .button-draw img {
-    margin-right: 40px;
+    margin-right: 15px;
 }
 
 .button-draw:hover {
@@ -166,4 +170,46 @@ ul {
     opacity: 0.6;
     font-style: italic;
     color: gray;
+}
+
+/* Botonm para el reinicio*/
+.button-reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ccc;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #000;
+    padding: 10px 30px;
+    margin-left: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-reset:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Ícono dentro del botón de reinicio */
+.icono-reiniciar {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+/*cambia el color del boton*/
+.button-reset:not(:disabled) {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+.listas-container {
+    display: flex;
+    gap: 120px;
+    align-items: flex-start;
 }
