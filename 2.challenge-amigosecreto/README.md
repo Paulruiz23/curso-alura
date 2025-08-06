@@ -8,11 +8,11 @@ Es ideal para organizar juegos de amigo secreto o simplemente practicar lógica 
 
 ---
 
-## Índice de Contenido
+## Indice de Contenido
 
 - [Funcionalidad](#funcionalidad)
 - [Aprendizajes](#aprendizajes)
-- [Explicación del Código](#explicacion-del-codigo)
+- [Explicacion del Codigo](#explicacion-del-codigo)
 - [Como usar](#como-usar)
 - [Tecnologias usadas](#tecnologias-usadas)
 - [Estructura de archivos](#estructura-de-archivos)
@@ -30,9 +30,11 @@ Es ideal para organizar juegos de amigo secreto o simplemente practicar lógica 
   - Se tachan los nombres que ya fueron sorteados.
   - Cada grupo se muestra con un color de fondo diferente.
 
+#### [🔝 Volver al índice](#indice-de-contenido)
+
 ---
 
-## Explicación del Código
+## Explicacion del Codigo
 
 Esta sección describe la función de cada parte importante del archivo `app.js`:
 
@@ -84,6 +86,8 @@ Esta sección describe la función de cada parte importante del archivo `app.js`
 - Usa la cantidad de sorteos para elegir el color de forma cíclica.
 - Mejora la visualización distinguiendo cada grupo con un color diferente.
 
+#### [🔝 Volver al índice](#indice-de-contenido)
+
 ---
 
 ## Aprendizajes
@@ -110,9 +114,11 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 - Aplicar clases (`classList.add`) para modificar el estilo visual de elementos (tachar sorteados).
 - Cambiar estilos directamente desde JavaScript, como el color de fondo, usando `style.backgroundColor`.
 
+#### [🔝 Volver al índice](#indice-de-contenido)
+
 ---
 
-## Cómo usar
+## Como usar
 
 1. Abre el proyecto de alguna de estas dos formas:
    - 📥 **Descargando los archivos** y abriendo `index.html` en tu navegador (doble clic o botón derecho → abrir con navegador).
@@ -127,14 +133,18 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
    - Los nombres tachados.
    - Los grupos formados con colores diferentes.
 
+#### [🔝 Volver al índice](#indice-de-contenido)
+
 ---
 
-## Tecnologías usadas
+## Tecnologias usadas
 
 - HTML5
 - JavaScript
 - Git y Github
 - Visual Studio Code
+
+#### [🔝 Volver al índice](#indice-de-contenido)
 
 ---
 
@@ -149,9 +159,13 @@ challenge-amigo-secreto/
 └── README.md          # Documentación del proyecto
 ```
 
+#### [🔝 Volver al índice](#indice-de-contenido)
+
 ---
 
 ## Autor
 **Paul Stuart Ruiz Cabrera** 
 
  [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paulruiz23) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paulruiz4227/)
+
+ #### [🔝 Volver al índice](#indice-de-contenido)
