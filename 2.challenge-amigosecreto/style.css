@@ -152,9 +152,10 @@ ul {
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
+    color: #000;
     background-color: var(--color-button);
     font-size: 16px;
+    font-family: "Inter", sans-serif;
 }
 
 .button-draw img {
@@ -190,7 +191,18 @@ ul {
     transition: background-color 0.2s;
 }
 
+.button-draw:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+.button-draw:disabled img {
+    opacity: 0.5;
+}
+
 .button-reset:disabled {
+    opacity: 0.5;
     background-color: #ddd;
     cursor: not-allowed;
 }
