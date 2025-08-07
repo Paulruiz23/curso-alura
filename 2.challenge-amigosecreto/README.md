@@ -26,10 +26,10 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 ## Funcionamiento
 
 - Permite agregar nombres a una lista.
+
    <p align="center">
-      <img src="assets/nombres.gif" width="400">
+      <img src="assets/nombres.gif" width="300">
    </p>
-   ![Agrega nombres](assets/nombres.gif)
 
 - Al presionar el botón de sorteo:
    - Comprueba que haya al menos 2 nombres.
@@ -42,7 +42,9 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
    - Agrega el nombre la lista Amigos Secretos.
    - Si ya no quedan nombres, finaliza el sorteo y desactiva el boton de sorteo.
 
-   ![Boton sorteo](assets/sorteo.gif)
+   <p align="center">
+      <img src="assets/sorteo.gif" width="300">
+   </p>
 
 - Al presionar el boton de reinicio:
    - Limpia listas y variables.
@@ -50,8 +52,10 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
    - Habilita el campo de texto.
    - Desactiva botones de sorteo y reinicio.
    - Coloca el cursor en el campo.
-
-   ![Boton reinicio](assets/reinicio.gif)
+   
+   <p align="center">
+      <img src="assets/reinicio.gif" width="300">
+   </p>
 
 #### [🔝 Volver al indice](#indice-de-contenido)
 
