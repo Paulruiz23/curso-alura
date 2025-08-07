@@ -12,7 +12,7 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 
 ## Indice de Contenido
 
-- [Funcionalidad](#funcionalidad)
+- [Funcionamiento](#funcionamiento)
 - [Explicacion del Código](#explicacion-del-codigo)
 - [Desafios durante el desarrollo](#desafios-durante-el-desarrollo)
 - [Aprendizajes](#aprendizajes)
