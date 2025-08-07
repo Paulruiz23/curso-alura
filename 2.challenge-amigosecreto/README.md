@@ -13,9 +13,9 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 ## Indice de Contenido
 
 - [Funcionalidad](#funcionalidad)
-- [Aprendizajes](#aprendizajes)
-- [Desafios durante el desarrollo](#desafios-durante-el-desarrollo)
 - [Explicacion del Código](#explicacion-del-codigo)
+- [Desafios durante el desarrollo](#desafios-durante-el-desarrollo)
+- [Aprendizajes](#aprendizajes)
 - [Como usar](#como-usar)
 - [Tecnologias usadas](#tecnologias-usadas)
 - [Estructura de archivos](#estructura-de-archivos)
