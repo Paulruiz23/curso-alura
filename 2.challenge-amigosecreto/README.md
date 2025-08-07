@@ -10,14 +10,14 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 ---
 
 
-## Índice de Contenido
+## Indice de Contenido
 
 - [Funcionalidad](#funcionalidad)
 - [Aprendizajes](#aprendizajes)
-- [Desafíos durante el desarrollo](#desafios-durante-el-desarrollo)
-- [Explicación del Código](#explicacion-del-código)
-- [Cómo usar](#cómo-usar)
-- [Tecnologías usadas](#tecnologías-usadas)
+- [Desafios durante el desarrollo](#desafios-durante-el-desarrollo)
+- [Explicacion del Código](#explicacion-del-codigo)
+- [Como usar](#como-usar)
+- [Tecnologias usadas](#tecnologias-usadas)
 - [Estructura de archivos](#estructura-de-archivos)
 - [Autor](#autor)
 
@@ -33,11 +33,11 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
   - Se tachan los nombres que ya fueron sorteados.
   - Cada grupo se muestra con un color de fondo diferente.
 
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
-## Explicación del Código
+## Explicacion del Codigo
 
 Esta sección describe la función de cada parte importante del archivo `app.js`:
 
@@ -55,7 +55,7 @@ Esta sección describe la función de cada parte importante del archivo `app.js`
 
 ### ➕ `agregarAmigo()`
 
-![Agregar amigo](assets/agregar-amigo.png)
+![agregarAmigo](assets/agregarAmigo.png)
 
 - Se ejecuta al hacer clic en "Añadir".
 - Toma el valor del input y lo agrega a `listaDeAmigos`.
@@ -120,58 +120,60 @@ Esta sección describe la función de cada parte importante del archivo `app.js`
 ---
 
 ### 📝 Funciones auxiliares
-   `esNombreValido(nombre)`: Verifica que el campo no esté vacío.
 
 ![esNombreValido](assets/esNombreValido.png)
 
----
-   `desactivarEntrada()`: Desactiva el botón de añadir y el input de texto.
+   `esNombreValido(nombre)`: Verifica que el campo no esté vacío.
 
+---
+  
 ![desactivarEntrada](assets/desactivarEntrada.png)
 
+   `desactivarEntrada()`: Desactiva el botón de añadir y el input de texto.
+
 ---
+
+![mostrarResultado](assets/desactivarEntrada.png)
 
    `mostrarResultado(mensaje)`: Muestra un mensaje en el área de resultado.
 
-   ![mostrarResultado](assets/desactivarEntrada.png)
-
 ---
+
+![tacharNombre](assets/tacharNombre.png)
 
    `tacharNombre(nombre)`: Aplica una clase al nombre sorteado para marcarlo visualmente.
 
-   ![tacharNombre](assets/tacharNombre.png)
-
 ---
+
+![eliminarNombrePorIndice](assets/eliminarNombrePorIndice.png)
 
    `eliminarNombrePorIndice(lista, indice)`: Elimina un nombre específico de una lista.
 
-   ![eliminarNombrePorIndice](assets/eliminarNombrePorIndice.png)
-
 ---
+
+![duplicarListaDeAmigos](assets/duplicarListaDeAmigos.png)
+
    `duplicarListaDeAmigos(lista)`: Crea una copia exacta de la lista original.
 
-   ![duplicarListaDeAmigos](assets/duplicarListaDeAmigos.png)
-
 ---
+
+![mostrarGrupoActual](assets/mostrarGrupoActual.png)
 
    `mostrarGrupoActual()`: Muestra en pantalla los grupos que se van formando.
 
-   ![mostrarGrupoActual](assets/mostrarGrupoActual.png)
-
 ---
+
+![sortearNombreAleatorio](assets/sortearNombreAleatorio.png)
 
    `sortearNombreAleatorio()`: Selecciona un nombre al azar de los disponibles y lo elimina.
-   
-   ![sortearNombreAleatorio](assets/sortearNombreAleatorio.png)
 
 
-
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
 
-## Desafíos durante el desarrollo
+## Desafios durante el desarrollo
 
 Durante la creación del proyecto **Challenge Amigo Secreto**, enfrenté varios obstáculos que me ayudaron a mejorar mis habilidades en HTML, CSS y JavaScript. Aquí detallo los principales retos y cómo los solucioné:
 
@@ -201,12 +203,12 @@ Durante la creación del proyecto **Challenge Amigo Secreto**, enfrenté varios 
 
 7. **Organización del `README.md` y navegación entre secciones**  
    - **Problema:** A medida que el contenido del `README.md` crecía, se volvió difícil de navegar y localizar información rápidamente. La falta de estructura clara dificultaba la lectura y comprensión del proyecto.  
-   - **Solución:** Implementé un índice al inicio del documento con enlaces internos (`anclas`) que permiten saltar directamente a cada sección. Además, añadí una `ancla` de retorno al índice al final de cada sección principal para facilitar la navegación hacia el inicio del documento.
+   - **Solución:** Implementé un indice al inicio del documento con enlaces internos (`anclas`) que permiten saltar directamente a cada sección. Además, añadí una `ancla` de retorno al indice al final de cada sección principal para facilitar la navegación hacia el inicio del documento.
 .
 
 8. **Índice de navegación dañado por íconos en títulos del `README.md`**  
-   - **Problema:** Los enlaces del índice no funcionaban correctamente por los emojis en los títulos.  
-   - **Solución:** Eliminé los íconos y mantuve solo texto en los encabezados para asegurar que el índice automático de GitHub funcionara como se esperaba.
+   - **Problema:** Los enlaces del indice no funcionaban correctamente por los emojis en los títulos.  
+   - **Solución:** Eliminé los íconos y mantuve solo texto en los encabezados para asegurar que el indice automático de GitHub funcionara como se esperaba.
 
 9. **Insertar imágenes y GIFs en el `README.md`**  
    - **Problema:** No estaba seguro de si Markdown permitía incluir imágenes `.png` o animaciones `.gif`.  
@@ -217,7 +219,7 @@ Durante la creación del proyecto **Challenge Amigo Secreto**, enfrenté varios 
 
 > Estos retos me ayudaron a practicar, comprender mejor la estructura del DOM, mejorar el uso de Git y reforzar conceptos de diseño web.
 
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
@@ -265,11 +267,11 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 - Aprendí a no realizar commits accidentales, verificando cuidadosamente el estado de los archivos antes de confirmar.
 
 
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
-## Cómo usar
+## Como usar
 
 1. Abre el proyecto de alguna de estas dos formas:
    - 📥 **Descargando los archivos** y abriendo `index.html` en tu navegador (doble clic o botón derecho → abrir con navegador).
@@ -285,11 +287,11 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
    - Los nombres tachados.
    - Los grupos formados con colores diferentes.
 
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
-## Tecnologías usadas
+## Tecnologias usadas
 
 - HTML5
 - CSS3
@@ -297,7 +299,7 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 - Git y Github
 - Visual Studio Code
 
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
@@ -314,7 +316,7 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 └── assets/              # Carpeta con recursos visuales
 
 ```
-#### [🔝 Volver al índice](#indice-de-contenido)
+#### [🔝 Volver al indice](#indice-de-contenido)
 
 ---
 
@@ -323,4 +325,4 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 
  [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paulruiz23) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paulruiz4227/)
 
- #### [🔝 Volver al índice](#indice-de-contenido)
+ #### [🔝 Volver al indice](#indice-de-contenido)
