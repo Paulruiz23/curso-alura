@@ -23,15 +23,29 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 
 ---
 
-## Funcionalidad
+## Funcionamiento
 
 - Permite agregar nombres a una lista.
+
+   ![Agrega nombres](assets/nombres.gif)
+
 - Al presionar el botón de sorteo:
-  - Se elige un nombre aleatoriamente.
-  - Se muestra quién es el "amigo secreto".
-  - Se agrupan los sorteos de dos en dos.
-  - Se tachan los nombres que ya fueron sorteados.
-  - Cada grupo se muestra con un color de fondo diferente.
+   - Se elige un nombre aleatoriamente.
+   - Se muestra quién es el "amigo secreto".
+   - Se agrupan los sorteos de dos en dos.
+   - Se tachan los nombres que ya fueron sorteados.
+   - Cada grupo se muestra con un color de fondo diferente.
+
+   ![Boton sorteo](assets/sorteo.gif)
+
+- Al presionar el boton de reinicio:
+   - Limpia listas y variables.
+   - Borra la pantalla.
+   - Habilita el campo de texto.
+   - Desactiva botones de sorteo y reinicio.
+   - Coloca el cursor en el campo.
+
+   ![Boton reinicio](assets/reinicio.gif)
 
 #### [🔝 Volver al indice](#indice-de-contenido)
 
