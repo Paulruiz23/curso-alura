@@ -16,7 +16,7 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 - [Explicacion del Código](#explicacion-del-codigo)
 - [Desafios durante el desarrollo](#desafios-durante-el-desarrollo)
 - [Aprendizajes](#aprendizajes)
-- [Como usar](#como-usar)
+- [Como usar el proyecto](#como-usar-el-proyecto)
 - [Tecnologias usadas](#tecnologias-usadas)
 - [Estructura de archivos](#estructura-de-archivos)
 - [Autor](#autor)
@@ -25,7 +25,12 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 
 ## Funcionamiento
 
-- Permite agregar nombres a una lista.
+- Permite agregar nombres a una lista:
+   - El usuario escribe un nombre en el campo de texto y presiona "Añadir".
+   - El sistema valida que el nombre no esté vacío ni repetido antes de guardarlo.
+   - El nombre se añade a la Lista de Amigos que se muestra en pantalla.
+   - Si el nombre es válido, el campo de texto se limpia automáticamente para ingresar otro.
+   - Una vez que hay al menos dos nombres, se habilita el botón "Sortear amigo".
 
    <p align="left">
       <img src="assets/nombres.gif" width="300">
@@ -48,7 +53,7 @@ Es ideal para organizar juegos de amigo secreto a nivel usuario o simplemente pr
 
 - Al presionar el boton de reinicio:
    - Limpia listas y variables.
-   - Borra la pantalla.
+   - Elimina visualmente todos los nombres de las listas.
    - Habilita el campo de texto.
    - Desactiva botones de sorteo y reinicio.
    - Coloca el cursor en el campo.
@@ -287,7 +292,7 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 `git commit -m "Descripción del cambio realizado"`.
 - Usé `git status` para ver qué archivos fueron modificados antes de confirmar cambios.
 - Comprendí cómo resolver errores causados por archivos `.swp`, eliminándolos directamente con: `rm .nombre-del-archivo.swp`
-- Practiqué cómo navegar entre carpetas y usar comandos como cd para moverme en la terminal al directorio correcto del proyecto.
+- Practiqué cómo navegar entre carpetas y usar comandos como `cd` para moverme en la terminal al directorio correcto del proyecto.
 - Aprendí a no realizar commits accidentales, verificando cuidadosamente el estado de los archivos antes de confirmar.
 
 
@@ -295,21 +300,28 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
 
 ---
 
-## Como usar
+## Como usar el proyecto
 
-1. Abre el proyecto de alguna de estas dos formas:
-   - 📥 **Descargando los archivos** y abriendo `index.html` en tu navegador (doble clic o botón derecho → abrir con navegador).
-   - 🌐 **[🚧Link en construcción🚧]** (futuro enlace con GitHub Pages).
+<p align="left">
+  <img src="comousar.gif" width="300" alt="Demostración del juego">
+</p>
 
+1. 📥 **Abre el proyecto** de alguna de estas dos formas:  
+   - Descargando los archivos y abriendo `index.html` en tu navegador.  
+   - 🔗 **[Juego Amigo Secreto](https://paulruiz23.github.io/curso-alura/2.challenge-amigosecreto/)**  
 
-2. Ingresa nombres uno por uno en el campo de texto y haz clic en **"Añadir"**.
+2. ✏ **Escribe un nombre** en el campo de texto y presiona **"Añadir"** o la tecla **Enter**.  
 
-3. Una vez agregados todos los nombres, haz clic en **"Sortear Amigo Secreto"**.
+3. ➕ **Agrega todos los participantes** repitiendo el paso anterior.  
 
-4. Verás en pantalla:
-   - El nombre sorteado.
-   - Los nombres tachados.
-   - Los grupos formados con colores diferentes.
+4. ✅ **Confirma la lista** pulsando **"Confirmar lista"** en la alerta emergente para asi bloquear la **Lista de Amigos** y habilitar el sorteo.  
+
+5. 🎲 **Sortea** pulsando **"Sortear Amigo Secreto"** para:  
+   - Mostrar el nombre sorteado.  
+   - Tacharlo de la **Lista de Amigos**.  
+   - Agruparlos en equipos en la lista de **Amigos Secretos**.  
+
+6. 🔄 **Reinicia** el juego cuando quieras empezar de nuevo. 
 
 #### [🔝 Volver al indice](#indice-de-contenido)
 
