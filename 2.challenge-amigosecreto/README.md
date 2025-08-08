@@ -310,18 +310,18 @@ Durante la creación de este proyecto, reforcé y descubrí varios conceptos fun
    - Descargando los archivos y abriendo `index.html` en tu navegador.  
    - 🔗 **[Juego Amigo Secreto](https://paulruiz23.github.io/curso-alura/2.challenge-amigosecreto/)**  
 
-2. ✏ **Escribe un nombre** en el campo de texto y presiona **"Añadir"** o la tecla **Enter**.  
+2. ✏ **Escribe un nombre** en el campo de texto y presiona **"Añadir"**.  
 
-3. ➕ **Agrega todos los participantes** repitiendo el paso anterior.  
+3. ➕ **Agrega todos los participantes** a tu **"Lista de Amigos"** repitiendo el paso anterior.  
 
-4. ✅ **Confirma la lista** pulsando **"Confirmar lista"** en la alerta emergente para asi bloquear la **Lista de Amigos** y habilitar el sorteo.  
+4. ✅ **Confirma la lista** pulsando **"Aceptar"** si tu lista esta completa.  
 
-5. 🎲 **Sortea** pulsando **"Sortear Amigo Secreto"** para:  
-   - Mostrar el nombre sorteado.  
-   - Tacharlo de la **Lista de Amigos**.  
-   - Agruparlos en equipos en la lista de **Amigos Secretos**.  
+5. 🎲 **Sortea** pulsando **"Sortear amigo"** para mostrar el nombre sorteado y agruparlos en la lista de **Amigos Secretos**.  
 
-6. 🔄 **Reinicia** el juego cuando quieras empezar de nuevo. 
+6. 🔄 **Reinicia** el juego cuando quieras empezar de nuevo pulsando **"Reiniciar juego"**. 
+
+> 📌 Si quieres conocer en detalle cómo funciona cada parte del código, visita la sección [Funcionamiento](#funcionamiento) para una explicación más completa.
+
 
 #### [🔝 Volver al indice](#indice-de-contenido)
 
