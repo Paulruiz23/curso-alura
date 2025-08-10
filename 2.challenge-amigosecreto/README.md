@@ -234,7 +234,6 @@ Durante la creación del proyecto **Challenge Amigo Secreto**, enfrenté varios 
    - **Problema:** A medida que el contenido del `README.md` crecía, se volvió difícil de navegar y localizar información rápidamente. La falta de estructura clara dificultaba la lectura y comprensión del proyecto.  
    - **Solución:** Implementé un indice al inicio del documento con enlaces internos (`anclas`) que permiten saltar directamente a cada sección. Además, añadí una `ancla` de retorno al indice al final de cada sección principal para facilitar la navegación hacia el inicio del documento.
 .
-
 8. **Índice de navegación dañado por íconos en títulos del `README.md`**  
    - **Problema:** Los enlaces del indice no funcionaban correctamente por los emojis en los títulos.  
    - **Solución:** Eliminé los íconos y mantuve solo texto en los encabezados para asegurar que el indice automático de GitHub funcionara como se esperaba.
