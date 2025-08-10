@@ -54,7 +54,7 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    font-size: 40px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
@@ -89,7 +89,7 @@ body {
 /*Se modifica para tener los botones uno al lado del otro*/
 .button-container {
     display: flex;
-    gap: 50px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -222,6 +222,48 @@ ul {
 }
 .listas-container {
     display: flex;
-    gap: 120px;
+    gap: 20px;
     align-items: flex-start;
+}
+
+/*añade linea para dividir listas*/
+
+.listas-container > div:first-child {
+    border-right: 2px solid #ccc; /* Línea gris */
+    padding-right: 30px; /* Espacio entre borde y texto */
+}
+
+.listas-container > div:last-child {
+    padding-left: 20px; /* Espacio para que no quede pegado */
+}
+
+
+
+
+/*Imagen del header por defecto (PC)*/
+.header-banner img {
+    width: 450px; /* ajusta el ancho que quieras para escritorio */
+    height: auto;
+}
+
+/* Para pantallas medianas (tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .header-banner img {
+        width: 120px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+}
+
+/* Para pantallas pequeñas (móviles chicos) */
+@media (max-width: 480px) {
+    .header-banner img {
+        width: 180px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
 }
