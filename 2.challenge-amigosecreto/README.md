@@ -244,7 +244,7 @@ Durante la creación del proyecto **Challenge Amigo Secreto**, enfrenté varios 
    - **Solución:** Confirmé que se pueden incluir con la sintaxis 
    
        `![texto](ruta/archivo.png)`.
-       
+
 10. **Elementos y listas desordenados en móviles**
    - **PROBLEMA:** En dispositivos móviles, la imagen del header y el título "Amigo Secreto" se mostraban en un orden que rompía la jerarquía visual. Además, los pares de amigos sorteados (ej. `Juan 🤝 Pedro`) se partían en dos líneas, dificultando la lectura. Las listas tampoco estaban claramente separadas, lo que podía confundir al usuario.
    - **SOLUCIÓN:** Se implementaron `@media (max-width: 768px)` para ajustar el diseño en móviles, aplicando `flex-direction: column-reverse` para colocar el título antes de la imagen, `white-space: nowrap` para que los pares de amigos se mantengan en una sola línea y estilos de `margin` y `border-bottom` para dar separación visual entre las listas.
