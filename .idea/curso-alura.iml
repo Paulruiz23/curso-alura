@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.java-poo/1.java-primera-app/1-primer-programa/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.java-poo/1.java-primera-app/1-primer-programa/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java/1.Java-Orientado-a-Objetos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java/2.Java-y-Spring-Framework" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java/3.Inteligencia-Artificial-y-Java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.Java-Orientado-a-Objetos" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.java-creando-primera-aplicacion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.java-creando-primera-aplicacion/primer-programa-java/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/1.java-poo/1.java-primera-app/2-catalogo-de-peliculas/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/4.backend-java2/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/gson-2.13.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
