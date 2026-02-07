@@ -26,13 +26,11 @@ bin/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
-.DS_Store
 # Maven build output
 target/
 
 # IntelliJ IDEA
-.idea/
+4.backend-java/.idea/
 *.iml
 
 # System files
