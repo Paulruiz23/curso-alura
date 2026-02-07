@@ -28,3 +28,19 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+# Maven build output
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.class
+
+# Logs
+*.log
