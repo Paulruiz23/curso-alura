@@ -1,0 +1,13 @@
+package med.voll.api.paciente;
+
+public record DatosListaPaciente(
+        Long id,
+        String email,
+        String nombre,
+        String documentoIdentidad
+) {
+    public DatosListaPaciente(Paciente paciente) {
+        this(paciente.getId(),paciente.getEmail(), paciente.getNombre(), paciente.getDocumentoIdentidad());
+    }
+
+}
